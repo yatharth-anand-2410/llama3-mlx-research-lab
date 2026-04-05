@@ -16,7 +16,7 @@ Recent deep-dives into LLM internals, fine-tuning, and weight sensitivity.
 
 ## 📁 Research Notebooks
 
-If you want to run the code yourself, explore the interactive notebooks in the [notebooks/](https://github.com/stokome/llama3-mlx-research-lab/tree/main/notebooks) directory.
+If you want to run the code yourself, explore the interactive notebooks in the [notebooks/](https://github.com/yatharth-anand-2410/llama3-mlx-research-lab/tree/main/notebooks) directory.
 
 1. **[Local Inference]({{ site.baseurl }}/notebooks/01_local_inference.ipynb)**: Native Llama 3 on Metal.
 2. **[Weight Surgery]({{ site.baseurl }}/notebooks/05_weight_surgery.ipynb)**: Direct tensor manipulation and embedding analysis.
@@ -29,7 +29,7 @@ If you want to run the code yourself, explore the interactive notebooks in the [
 To reproduce these experiments locally:
 
 ```bash
-git clone https://github.com/stokome/llama3-mlx-research-lab
+git clone https://github.com/yatharth-anand-2410/llama3-mlx-research-lab
 cd llama3-mlx-research-lab
 python3 -m venv .venv
 source .venv/bin/activate

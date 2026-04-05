@@ -2,7 +2,7 @@
 
 A research-first laboratory dedicated to deconstructing Large Language Models. This repository contains experiments on **Quantized Weight Sensitivity**, **Manual Weight Surgery**, and **Fine-Tuning** using the Apple MLX framework on MacBook M3.
 
-[![GitHub Pages](https://img.shields.io/badge/Live-Blog-blue?style=for-the-badge&logo=github)](https://stokome.github.io/llama3-mlx-research-lab)
+[![GitHub Pages](https://img.shields.io/badge/Live-Blog-blue?style=for-the-badge&logo=github)](https://yatharth-anand-2410.github.io/llama3-mlx-research-lab)
 [![MLX](https://img.shields.io/badge/Framework-MLX-orange?style=for-the-badge)](https://github.com/ml-explore/mlx)
 [![Llama3](https://img.shields.io/badge/Model-Llama_3_8B-8A2BE2?style=for-the-badge)](https://huggingface.co/meta-llama/Meta-Llama-3-8B)
 
@@ -20,7 +20,7 @@ By zeroing out the `embed_tokens.weight` matrix, we empirically proved that the 
 
 ## 📁 Repository Structure
 
-- **[`_posts/`](_posts/)**: Research blog articles (Live at [stokome.github.io/llama3-mlx-research-lab](https://stokome.github.io/llama3-mlx-research-lab))
+- **[`_posts/`](_posts/)**: Research blog articles (Live at [yatharth-anand-2410.github.io/llama3-mlx-research-lab](https://yatharth-anand-2410.github.io/llama3-mlx-research-lab))
 - **[`notebooks/`](notebooks/)**: Interactive Jupyter notebooks for all experiments.
   - `01_local_inference.ipynb`: Basic setup and Metal benchmarking.
   - `03_lora_finetuning.ipynb`: Fine-tuning Llama 3 on 'no_robots' dataset.
@@ -40,10 +40,11 @@ By zeroing out the `embed_tokens.weight` matrix, we empirically proved that the 
 ### 2. Setup
 ```bash
 # Clone the repository
-git clone https://github.com/stokome/llama3-mlx-research-lab.git
+git clone https://github.com/yatharth-anand-2410/llama3-mlx-research-lab.git
 cd llama3-mlx-research-lab
+...
+*Created by [yatharth-anand-2410](https://github.com/yatharth-anand-2410) as part of an LLM Mechanistic Interpretability study.*
 
-# Setup environment
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
