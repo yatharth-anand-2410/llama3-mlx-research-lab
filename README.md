@@ -2,25 +2,21 @@
 
 A research-first laboratory dedicated to deconstructing Large Language Models. This repository contains experiments on **Quantized Weight Sensitivity**, **Manual Weight Surgery**, and **Fine-Tuning** using the Apple MLX framework on MacBook M3.
 
-[![GitHub Pages](https://img.shields.io/badge/Live-Blog-blue?style=for-the-badge&logo=github)](https://yatharth-anand-2410.github.io/llama3-mlx-research-lab)
+[![Main Blog](https://img.shields.io/badge/Live-Blog-blue?style=for-the-badge&logo=github)](https://yatharth-anand-2410.github.io)
 [![MLX](https://img.shields.io/badge/Framework-MLX-orange?style=for-the-badge)](https://github.com/ml-explore/mlx)
 [![Llama3](https://img.shields.io/badge/Model-Llama_3_8B-8A2BE2?style=for-the-badge)](https://huggingface.co/meta-llama/Meta-Llama-3-8B)
 
 ---
 
-## 🔬 Core Discoveries
+## 🔬 Blog & Research Journal
 
-### ⚡ The "Tipping Point" (Shift ~1M)
-We discovered that 4-bit quantized Llama 3 models can tolerate uniform weight perturbations up to **0.07%** of their integer range. Beyond this threshold, bit-level borrow propagation causes catastrophic output collapse.
-
-### 🧠 Brain Surgery
-By zeroing out the `embed_tokens.weight` matrix, we empirically proved that the embedding table is the model's primary "vocabulary knowledge," while the `lm_head` is its "output speaker."
+**Note: The blog for this research lab has been moved to my centralized blog repository:**  
+👉 **[yatharth-anand-2410.github.io](https://yatharth-anand-2410.github.io)**
 
 ---
 
 ## 📁 Repository Structure
 
-- **[`_posts/`](_posts/)**: Research blog articles (Live at [yatharth-anand-2410.github.io/llama3-mlx-research-lab](https://yatharth-anand-2410.github.io/llama3-mlx-research-lab))
 - **[`notebooks/`](notebooks/)**: Interactive Jupyter notebooks for all experiments.
   - `01_local_inference.ipynb`: Basic setup and Metal benchmarking.
   - `03_lora_finetuning.ipynb`: Fine-tuning Llama 3 on 'no_robots' dataset.

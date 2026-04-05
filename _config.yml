@@ -1,44 +1,16 @@
-title: "LLM Deep-Dive Laboratory"
+# Llama 3 MLX Research Lab - Project Configuration
+
+# This repository is now a dedicated research lab for LLM experiments.
+# The blog has been centralized to: https://yatharth-anand-2410.github.io
+
+title: "Llama 3 MLX Research Lab"
 description: "Deconstructing Llama 3: From Local Inference to Mechanistic Interpretability and Weight Surgery."
-baseurl: "/llama3-mlx-research-lab" # IMPORTANT: No trailing slash
-url: "https://yatharth-anand-2410.github.io"
 
-# Owner Information
-author:
-  name: "Yatharth Anand"
-  email: "yatharthanand2410@gmail.com"
-  twitter_username: "yatharth_anand"
-  github_username: "yatharth-anand-2410"
-
-# Build Settings
-remote_theme: jekyll/minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-remote-theme
-  - jekyll-include-cache
-
-# Custom Settings
-header_pages:
-  - index.md
-
-# Minima Settings
-minima:
-  social_links:
-    - { platform: github, user_url: "https://github.com/yatharth-anand-2410/llama3-mlx-research-lab" }
-
-# Markdown Processing
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-# Force the inclusion of notebooks folder
+# Force the inclusion of notebooks folder for documentation purposes
 include:
   - notebooks
 
-# Exclude from processing
+# Exclude from processing if using Jekyll (for backwards compatibility or simple hosting)
 exclude:
   - .venv
   - .github
@@ -49,7 +21,5 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - README.md
   - pyproject.toml
   - requirements.txt
-  - Makefile
