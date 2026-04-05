@@ -1,7 +1,8 @@
 ---
-layout: home
+layout: page
 title: "The Lab Bench"
 subtitle: "Deconstructing Llama 3 on Metal"
+permalink: /
 ---
 
 Welcome to my research lab. This repository serves as a live journal of my experiments with Large Language Models (LLMs), focusing on the Llama 3 architecture using the Apple MLX framework.
@@ -10,7 +11,15 @@ Welcome to my research lab. This repository serves as a live journal of my exper
 
 Recent deep-dives into LLM internals, fine-tuning, and weight sensitivity.
 
-<!-- This section will be populated by Jekyll automatically from _posts -->
+<div class="posts-list">
+  {% for post in site.posts %}
+    <div class="post-item" style="margin-bottom: 20px;">
+      <span class="post-date" style="color: #666; font-size: 0.9em;">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h3 style="margin-top: 5px;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p style="font-size: 0.95em; color: #444;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    </div>
+  {% endfor %}
+</div>
 
 ---
 

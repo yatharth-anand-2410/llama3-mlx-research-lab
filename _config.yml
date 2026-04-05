@@ -1,38 +1,34 @@
 title: "LLM Deep-Dive Laboratory"
 description: "Deconstructing Llama 3: From Local Inference to Mechanistic Interpretability and Weight Surgery."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yatharth-anand-2410.github.io/llama3-mlx-research-lab" # your site's URL
+baseurl: "/llama3-mlx-research-lab" # IMPORTANT: Must be the repo name for Project Pages
+url: "https://yatharth-anand-2410.github.io" # Just the domain
 
 # Owner Information
 author:
   name: "Yatharth Anand"
   email: "yatharthanand2410@gmail.com"
-  twitter_username: "user_handle"
+  twitter_username: "yatharth_anand"
   github_username: "yatharth-anand-2410"
 
 # Build Settings
-theme: minima
+remote_theme: jekyll/minima # Use remote_theme for GitHub Pages
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # Custom Settings
 header_pages:
   - index.md
-  - notebooks/index.md
 
 # Minima Settings
 minima:
   social_links:
     - { platform: github, user_url: "https://github.com/yatharth-anand-2410/llama3-mlx-research-lab" }
-    - { platform: twitter, user_url: "https://twitter.com/user_handle" }
 
 # Markdown Processing
 markdown: kramdown
 highlighter: rouge
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
 
 # Exclude from processing
 exclude:
