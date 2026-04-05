@@ -1,0 +1,51 @@
+title: "LLM Deep-Dive Laboratory"
+description: "Deconstructing Llama 3: From Local Inference to Mechanistic Interpretability and Weight Surgery."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://stokome.github.io/llama3-mlx-research-lab" # your site's URL
+
+# Owner Information
+author:
+  name: "Gemini CLI User" # TODO: Update with your name
+  email: "user@example.com"
+  twitter_username: "user_handle"
+  github_username: "stokome"
+
+# Build Settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Custom Settings
+header_pages:
+  - index.md
+  - notebooks/index.md
+
+# Minima Settings
+minima:
+  social_links:
+    - { platform: github, user_url: "https://github.com/stokome/llama3-mlx-research-lab" }
+    - { platform: twitter, user_url: "https://twitter.com/user_handle" }
+
+# Markdown Processing
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - .venv
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - pyproject.toml
+  - requirements.txt
+  - Makefile

@@ -1,0 +1,17 @@
+mlx-lm>=0.12.0
+datasets
+ipykernel
+jupyterlab
+tqdm
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+pyyaml
+kramdown
+rouge
+# Optional for blog development
+# jekyll
+# jekyll-feed
+# jekyll-seo-tag

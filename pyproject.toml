@@ -1,0 +1,28 @@
+[project]
+name = "llama3-mlx-research-lab"
+version = "0.1.0"
+description = "A research-focused LLM laboratory on Apple Silicon using MLX."
+authors = [
+    { name = "stokome", email = "user@example.com" }
+]
+dependencies = [
+    "mlx-lm>=0.12.0",
+    "datasets",
+    "ipykernel",
+    "jupyterlab",
+    "tqdm",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn"
+]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]
