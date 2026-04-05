@@ -4,7 +4,6 @@ title: "The Tipping Point: Identifying the Threshold of Quantized Weight Corrupt
 date: 2026-04-05 09:00:00 -0000
 categories: [research, interpretability]
 tags: [llama3, mlx, quantization, weights]
-permalink: /research/tipping-point/
 ---
 
 ## Objective
